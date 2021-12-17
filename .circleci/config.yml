@@ -2,27 +2,27 @@ version: 2
 jobs:
     one:
       docker:
-            - image: circleci/ruby:2.4
+            - image: circleci/python@1.2
       steps:
         - lscpu
     two:
       docker:
-            - image: circleci/ruby:2.4
+            - image: circleci/python@1.2
       steps:
         - lscpu
     three:
       docker:
-            - image: circleci/ruby:2.4
+            - image: circleci/python@1.2
       steps:
         - lscpu
     four:
       docker:
-            - image: circleci/ruby:2.4
+            - image: circleci/python@1.2
       steps:
         - lscpu
     five:
       docker:
-            - image: circleci/ruby:2.4
+            - image: circleci/python@1.2
       steps:
         - lscpu
 
