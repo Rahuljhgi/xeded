@@ -1,37 +1,38 @@
-version: 2
+version: 2.1
 jobs:
-    one:
+    aku1:
       docker:
-            - image: circleci/python@1.2
+            - image: circleci/ruby:2.5.3
       steps:
-        - lscpu
-    two:
+        - run:
+            name: Install Dependencies
+            command: lscpu
+    aku2:
       docker:
-            - image: circleci/python@1.2
+            - image: circleci/ruby:2.5.3
       steps:
-        - lscpu
-    three:
+        - run:
+            name: Install Dependencies
+            command: lscpu
+    aku3:
       docker:
-            - image: circleci/python@1.2
+            - image: circleci/ruby:2.5.3
       steps:
-        - lscpu
-    four:
+        - run:
+            name: Install Dependencies
+            command: lscpu
+    aku4:
       docker:
-            - image: circleci/python@1.2
+            - image: circleci/ruby:2.5.3
       steps:
-        - lscpu
-    five:
-      docker:
-            - image: circleci/python@1.2
-      steps:
-        - lscpu
-
+        - run:
+            name: Install Dependencies
+            command: lscpu
 workflows:
-    version: 2
+    version: 2.1
     build:
         jobs:
-            - one
-            - two
-            - three
-            - four
-            - five
+            - aku1
+            - aku2
+            - aku3
+            - aku4
