@@ -6,28 +6,28 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: lscpu
+            command: timeout 1m lscpu
     aku2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: lscpu
+            command: timeout 1m lscpu
     aku3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: lscpu
+            command: timeout 1m lscpu
     aku4:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: lscpu
+            command: timeout 1m lscpu
 workflows:
     version: 2.1
     build:
