@@ -4,27 +4,27 @@ jobs:
       docker:
             - image: circleci/ruby:2.4
       steps:
-        - echo 1
+        - lscpu
     two:
       docker:
             - image: circleci/ruby:2.4
       steps:
-        - echo 2
+        - lscpu
     three:
       docker:
             - image: circleci/ruby:2.4
       steps:
-        - echo 3
+        - lscpu
     four:
       docker:
             - image: circleci/ruby:2.4
       steps:
-        - echo 4
+        - lscpu
     five:
       docker:
             - image: circleci/ruby:2.4
       steps:
-        - echo 5
+        - lscpu
 
 workflows:
     version: 2
